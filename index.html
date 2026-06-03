@@ -4,27 +4,122 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Megan | Director of Operations</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Serif+Display&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Georgia', serif; background-color: #fafaf8; color: #2c2c2c; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 40px 20px; }
-    .card { max-width: 560px; width: 100%; text-align: center; }
-    .avatar { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid #d4c9b8; margin-bottom: 24px; }
-    h1 { font-size: 2rem; font-weight: normal; letter-spacing: 0.04em; margin-bottom: 6px; color: #1a1a1a; }
-    .subtitle { font-family: 'Helvetica Neue', sans-serif; font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase; color: #888; margin-bottom: 32px; }
-    .divider { width: 40px; height: 1px; background-color: #d4c9b8; margin: 0 auto 32px; }
-    .about { font-size: 1rem; line-height: 1.8; color: #444; margin-bottom: 40px; }
-    .github-link { font-family: 'Helvetica Neue', sans-serif; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; color: #888; text-decoration: none; border-bottom: 1px solid #d4c9b8; padding-bottom: 2px; }
-    .github-link:hover { color: #2c2c2c; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: linear-gradient(135deg, #f5f0eb 0%, #ede8f0 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 24px;
+      padding: 56px 48px;
+      max-width: 560px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.07);
+    }
+
+    .avatar-wrap {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 28px;
+    }
+
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .avatar-ring {
+      position: absolute;
+      inset: -5px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #c9a96e, #a78bca);
+      z-index: -1;
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.2rem;
+      color: #1e1b2e;
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      font-size: 0.82rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #a78bca;
+      font-weight: 500;
+      margin-bottom: 28px;
+    }
+
+    .divider {
+      width: 48px;
+      height: 3px;
+      background: linear-gradient(90deg, #c9a96e, #a78bca);
+      border-radius: 2px;
+      margin: 0 auto 28px;
+    }
+
+    .about {
+      font-size: 1rem;
+      line-height: 1.85;
+      color: #4a4560;
+      margin-bottom: 36px;
+    }
+
+    .github-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #1e1b2e;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      transition: background 0.2s, transform 0.1s;
+    }
+
+    .github-link:hover {
+      background: #a78bca;
+      transform: translateY(-1px);
+    }
   </style>
 </head>
 <body>
   <div class="card">
-    <img class="avatar" src="https://github.com/meganwag23.png" alt="Megan's profile photo" />
+    <div class="avatar-wrap">
+      <div class="avatar-ring"></div>
+      <img class="avatar" src="https://github.com/meganwag23.png" alt="Megan" />
+    </div>
     <h1>Megan</h1>
     <p class="subtitle">Director of Operations</p>
     <div class="divider"></div>
-    <p class="about">I'm a Director of Operations with a passion for building efficient systems and leading high-performing teams. I'm always looking for new ways to bring clarity and momentum to complex challenges.</p>
-    <a class="github-link" href="https://github.com/meganwag23" target="_blank">github.com/meganwag23</a>
+    <p class="about">
+      I'm a Director of Operations with a passion for building efficient systems
+      and leading high-performing teams. I'm always looking for new ways to bring
+      clarity and momentum to complex challenges.
+    </p>
+    <a class="github-link" href="https://github.com/meganwag23" target="_blank">
+      <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+      github.com/meganwag23
+    </a>
   </div>
 </body>
 </html>
