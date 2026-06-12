@@ -3,126 +3,199 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Megan Wagner | Director of Operations</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <title>Megan Wagner</title>
+  <meta name="description" content="Former educator. Director of Operations. Public affairs professional bridging education, policy, and organizational leadership. Based in Dallas, TX." />
+  <meta property="og:title" content="Megan Wagner" />
+  <meta property="og:description" content="Former educator. Director of Operations. Public affairs advocate. Austin born, Dallas based." />
+  <meta property="og:image" content="https://github.com/meganwag23.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-    :root { --gold: #c9a96e; --lavender: #a78bca; --dark: #1e1b2e; --mid: #4a4560; --light: #7a7490; --bg: #f7f4f0; --card: #ffffff; --border: #ece8f0; }
+    :root { --cream: #F5EDE3; --paper: #EDE3D6; --parchment: #E4D8C8; --blush: #DDB8AE; --deep-blush: #C4918A; --red: #8B2E2C; --deep-red: #6B2020; --sage: #4C6A50; --gold: #B5904A; --warm-black: #1A1410; --mid: #5A4A3A; --light: #9A8878; --border: rgba(90,74,60,0.13); }
     html { scroll-behavior: smooth; }
-    body { font-family: 'DM Sans', sans-serif; background-color: var(--bg); color: var(--mid); line-height: 1.7; }
-    nav { position: sticky; top: 0; z-index: 100; background: rgba(247, 244, 240, 0.92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding: 0 40px; display: flex; align-items: center; justify-content: space-between; height: 60px; }
-    .nav-name { font-family: 'DM Serif Display', serif; font-size: 1.1rem; color: var(--dark); text-decoration: none; }
-    .nav-links { display: flex; gap: 32px; list-style: none; }
-    .nav-links a { font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--light); text-decoration: none; transition: color 0.2s; }
-    .nav-links a:hover { color: var(--lavender); }
-    .hero { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 80px 24px 72px; }
-    .avatar-wrap { position: relative; display: inline-block; margin-bottom: 32px; }
-    .avatar { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; display: block; position: relative; z-index: 1; }
-    .avatar-ring { position: absolute; inset: -4px; border-radius: 50%; background: linear-gradient(135deg, var(--gold), var(--lavender)); z-index: 0; }
-    .hero h1 { font-family: 'DM Serif Display', serif; font-size: 3rem; color: var(--dark); line-height: 1.1; margin-bottom: 10px; }
-    .hero-title { font-size: 0.82rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--lavender); font-weight: 500; margin-bottom: 28px; }
-    .hero-tagline { max-width: 560px; font-size: 1.1rem; color: var(--mid); line-height: 1.8; font-weight: 300; margin-bottom: 36px; }
-    .hero-tagline em { font-style: italic; font-family: 'DM Serif Display', serif; color: var(--dark); }
-    .cta-row { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
-    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 50px; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.04em; text-decoration: none; transition: all 0.2s; }
-    .btn-primary { background: var(--dark); color: white; }
-    .btn-primary:hover { background: var(--lavender); transform: translateY(-1px); }
-    .btn-secondary { background: transparent; color: var(--dark); border: 1.5px solid var(--border); }
-    .btn-secondary:hover { border-color: var(--lavender); color: var(--lavender); transform: translateY(-1px); }
-    section { max-width: 800px; margin: 0 auto; padding: 72px 24px; }
-    section + section { border-top: 1px solid var(--border); }
-    .section-label { font-size: 0.75rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); font-weight: 500; margin-bottom: 12px; text-align: center; }
-    .section-title { font-family: 'DM Serif Display', serif; font-size: 2rem; color: var(--dark); text-align: center; margin-bottom: 40px; line-height: 1.2; }
-    .about-text p { font-size: 1.05rem; line-height: 1.9; color: var(--mid); margin-bottom: 20px; }
-    .about-text p:last-child { margin-bottom: 0; }
-    .about-text strong { color: var(--dark); font-weight: 500; }
-    .expertise-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
-    .expertise-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 28px 24px; transition: box-shadow 0.2s, transform 0.2s; }
-    .expertise-card:hover { box-shadow: 0 8px 28px rgba(167, 139, 202, 0.12); transform: translateY(-2px); }
-    .expertise-icon { width: 40px; height: 40px; border-radius: 10px; background: linear-gradient(135deg, #f5eeff, #fdf3e7); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; font-size: 1.2rem; }
-    .expertise-card h3 { font-family: 'DM Serif Display', serif; font-size: 1.1rem; color: var(--dark); margin-bottom: 8px; }
-    .expertise-card p { font-size: 0.9rem; color: var(--light); line-height: 1.65; }
-    .skills-layout { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; }
-    .skill-group h4 { font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--lavender); font-weight: 500; margin-bottom: 12px; }
-    .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
-    .tag { background: var(--card); border: 1px solid var(--border); border-radius: 50px; padding: 5px 14px; font-size: 0.82rem; color: var(--mid); }
-    .aspiration-box { background: linear-gradient(135deg, #f5eeff 0%, #fdf3e7 100%); border-radius: 20px; padding: 48px 40px; text-align: center; }
-    .aspiration-box p { font-size: 1.05rem; line-height: 1.9; color: var(--mid); max-width: 600px; margin: 0 auto 20px; }
-    .aspiration-box p:last-of-type { margin-bottom: 0; }
-    footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); font-size: 0.8rem; color: var(--light); }
-    @media (max-width: 600px) { .hero h1 { font-size: 2.2rem; } nav { padding: 0 20px; } .nav-links { gap: 20px; } .aspiration-box { padding: 36px 24px; } }
+    body { font-family: 'DM Sans', sans-serif; background-color: var(--cream); color: var(--warm-black); line-height: 1.7; }
+    #progress { position: fixed; top: 0; left: 0; height: 2px; background: var(--red); width: 0%; z-index: 999; transition: width 0.08s linear; }
+    nav { position: sticky; top: 0; z-index: 100; background: rgba(245,237,227,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 0 56px; height: 56px; display: flex; align-items: center; justify-content: space-between; }
+    .nav-name { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 500; letter-spacing: 0.04em; color: var(--warm-black); text-decoration: none; }
+    .nav-links { list-style: none; display: flex; gap: 40px; }
+    .nav-links a { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--light); text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--red); }
+    .hero { display: grid; grid-template-columns: 1fr 1fr; min-height: 90vh; align-items: center; padding: 72px 56px 56px; gap: 56px; }
+    .hero-eyebrow { display: flex; align-items: center; gap: 10px; font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--light); margin-bottom: 24px; }
+    .hero-star { color: var(--red); font-size: 1rem; }
+    .hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(4.5rem, 8.5vw, 8rem); font-weight: 300; line-height: 0.92; color: var(--warm-black); margin-bottom: 28px; }
+    .hero h1 em { font-style: italic; font-weight: 300; color: var(--red); display: block; }
+    .hero-role { font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--mid); margin-bottom: 24px; }
+    .hero-desc { font-size: 1rem; color: var(--mid); line-height: 1.8; font-weight: 300; max-width: 440px; margin-bottom: 40px; }
+    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500; text-decoration: none; transition: all 0.22s; }
+    .btn-dark { background: var(--warm-black); color: var(--cream); }
+    .btn-dark:hover { background: var(--red); }
+    .btn-outline { border: 1px solid var(--border); color: var(--mid); }
+    .btn-outline:hover { border-color: var(--red); color: var(--red); }
+    .hero-visual { display: flex; flex-direction: column; align-items: flex-end; gap: 12px; }
+    .hero-photo-wrap { position: relative; width: 100%; max-width: 460px; }
+    .hero-photo-wrap::before { content: ''; display: block; padding-top: 112%; }
+    .hero-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; filter: sepia(8%) contrast(1.04); }
+    .hero-photo-wrap::after { content: ''; position: absolute; inset: 14px; border: 1px solid rgba(139,46,44,0.22); pointer-events: none; }
+    .hero-photo-caption { font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--light); }
+    .marquee-wrap { background: var(--paper); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 15px 0; overflow: hidden; }
+    .marquee-inner { display: flex; white-space: nowrap; animation: ticker 30s linear infinite; }
+    .marquee-inner span { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-style: italic; color: var(--mid); padding: 0 28px; }
+    .marquee-inner .dot { color: var(--red); font-style: normal; }
+    @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 56px; }
+    .section { padding: 96px 0; }
+    .section-header { display: flex; align-items: center; gap: 18px; margin-bottom: 52px; }
+    .section-label { font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--light); white-space: nowrap; }
+    .section-rule { flex: 1; height: 1px; background: var(--border); }
+    .section-num { font-family: 'Cormorant Garamond', serif; font-size: 0.85rem; color: var(--light); }
+    h2.display { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.4rem, 4.5vw, 3.8rem); font-weight: 400; line-height: 1.1; color: var(--warm-black); margin-bottom: 52px; }
+    h2.display em { font-style: italic; color: var(--red); }
+    .about-grid { display: grid; grid-template-columns: 1fr 320px; gap: 80px; align-items: start; }
+    .about-body p { font-size: 1rem; line-height: 1.9; color: var(--mid); margin-bottom: 22px; }
+    .about-body p:last-child { margin-bottom: 0; }
+    .about-body strong { color: var(--warm-black); font-weight: 500; }
+    .about-aside { position: sticky; top: 76px; }
+    .pull-quote { border-left: 2px solid var(--red); padding: 6px 0 6px 24px; margin-bottom: 36px; }
+    .pull-quote p { font-family: 'Cormorant Garamond', serif; font-size: 1.45rem; font-style: italic; font-weight: 300; line-height: 1.4; color: var(--warm-black); }
+    .stat-row { border-top: 1px solid var(--border); padding: 22px 0; }
+    .stat-num { font-family: 'Cormorant Garamond', serif; font-size: 3.2rem; font-weight: 300; line-height: 1; color: var(--warm-black); margin-bottom: 4px; }
+    .stat-label { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--light); }
+    .rule-wrap { padding: 0 56px; max-width: 1100px; margin: 0 auto; }
+    .rule-wrap hr { border: none; border-top: 1px solid var(--border); }
+    .expertise-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); }
+    .exp-item { background: var(--cream); padding: 36px 30px; transition: background 0.2s; cursor: default; }
+    .exp-item:hover { background: var(--paper); }
+    .exp-num { font-family: 'Cormorant Garamond', serif; font-size: 2.6rem; font-weight: 300; color: var(--blush); line-height: 1; margin-bottom: 14px; }
+    .exp-item h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 500; color: var(--warm-black); margin-bottom: 10px; }
+    .exp-item p { font-size: 0.86rem; color: var(--light); line-height: 1.7; }
+    .skills-bg { background: var(--paper); }
+    .skills-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 48px; }
+    .skill-cat { font-size: 0.68rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--sage); margin-bottom: 14px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag { font-size: 0.8rem; color: var(--mid); padding: 5px 14px; border: 1px solid var(--border); background: var(--cream); }
+    .connect-bg { background: var(--warm-black); padding: 120px 56px; text-align: center; }
+    .connect-label { display: block; font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--blush); margin-bottom: 20px; }
+    .connect-bg h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(3rem, 6vw, 5.5rem); font-weight: 300; line-height: 1.05; color: var(--cream); margin-bottom: 28px; }
+    .connect-bg h2 em { font-style: italic; color: var(--blush); }
+    .connect-bg p { font-size: 0.98rem; color: rgba(245,237,227,0.58); line-height: 1.85; max-width: 500px; margin: 0 auto 48px; }
+    .connect-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .btn-pale { background: var(--cream); color: var(--warm-black); padding: 14px 32px; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500; text-decoration: none; transition: background 0.2s; display: inline-flex; align-items: center; }
+    .btn-pale:hover { background: var(--blush); }
+    .btn-ghost { border: 1px solid rgba(245,237,227,0.22); color: rgba(245,237,227,0.65); padding: 14px 32px; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all 0.2s; }
+    .btn-ghost:hover { border-color: rgba(245,237,227,0.6); color: var(--cream); }
+    footer { background: var(--warm-black); border-top: 1px solid rgba(245,237,227,0.07); padding: 22px 56px; display: flex; justify-content: space-between; align-items: center; }
+    footer p { font-size: 0.72rem; letter-spacing: 0.06em; color: rgba(245,237,227,0.28); }
+    .fi { opacity: 0; transform: translateY(28px); transition: opacity 0.75s ease, transform 0.75s ease; }
+    .fi.on { opacity: 1; transform: translateY(0); }
+    .fi.d1 { transition-delay: 0.1s; } .fi.d2 { transition-delay: 0.2s; } .fi.d3 { transition-delay: 0.3s; }
+    @media (max-width: 960px) { .hero { grid-template-columns: 1fr; padding: 48px 32px; min-height: auto; } .hero-visual { order: -1; align-items: center; } .hero-photo-wrap { max-width: 300px; } nav { padding: 0 28px; } .container { padding: 0 32px; } .about-grid { grid-template-columns: 1fr; gap: 48px; } .about-aside { position: static; } .expertise-grid { grid-template-columns: repeat(2,1fr); } .skills-grid { grid-template-columns: 1fr; gap: 32px; } .connect-bg { padding: 80px 32px; } footer { padding: 20px 32px; flex-direction: column; gap: 6px; text-align: center; } .rule-wrap { padding: 0 32px; } }
+    @media (max-width: 600px) { .hero h1 { font-size: 3.2rem; } .nav-links { display: none; } .expertise-grid { grid-template-columns: 1fr; } }
+    @media print { #progress, .marquee-wrap, .hero-btns, .connect-btns { display: none; } nav { position: relative; } .fi { opacity: 1; transform: none; } .connect-bg { background: none; } .connect-bg h2, .connect-bg p, .connect-label { color: var(--warm-black); } }
   </style>
 </head>
 <body>
+  <div id="progress"></div>
   <nav>
     <a href="#" class="nav-name">Megan Wagner</a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#expertise">Expertise</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#looking-ahead">Work With Me</a></li>
+      <li><a href="#connect">Connect</a></li>
     </ul>
   </nav>
   <div class="hero">
-    <div class="avatar-wrap">
-      <div class="avatar-ring"></div>
-      <img class="avatar" src="https://github.com/meganwag23.png" alt="Megan Wagner" />
+    <div class="hero-text">
+      <p class="hero-eyebrow"><span class="hero-star">&#9733;</span> Austin born &nbsp;&middot;&nbsp; Dallas based</p>
+      <h1>Megan<em>Wagner</em></h1>
+      <p class="hero-role">Director of Operations &nbsp;&middot;&nbsp; Educator &nbsp;&middot;&nbsp; Advocate</p>
+      <p class="hero-desc">I build the systems, structures, and communications that let organizations work, especially in fast-moving environments where clarity is everything.</p>
+      <div class="hero-btns">
+        <a href="#about" class="btn btn-dark">My story</a>
+        <a href="#connect" class="btn btn-outline">Work with me</a>
+      </div>
     </div>
-    <h1>Megan Wagner</h1>
-    <p class="hero-title">Director of Operations &middot; Jefferson &amp; Associates</p>
-    <p class="hero-tagline">I build the systems, structures, and communications that let organizations <em>actually work,</em> especially in fast-moving, high-stakes environments where clarity is everything.</p>
-    <div class="cta-row">
-      <a href="#about" class="btn btn-primary">Learn more</a>
-      <a href="#looking-ahead" class="btn btn-secondary">Work with me</a>
+    <div class="hero-visual">
+      <div class="hero-photo-wrap">
+        <img class="hero-photo" src="https://github.com/meganwag23.png" alt="Megan Wagner" />
+      </div>
+      <p class="hero-photo-caption">Jefferson &amp; Associates &middot; Dallas, TX</p>
     </div>
   </div>
-  <section id="about">
-    <p class="section-label">Background</p>
-    <h2 class="section-title">How I got here</h2>
-    <div class="about-text">
-      <p>I started my career in education and spent seven years teaching elementary school. Looking back, what I loved most wasn't just teaching the lessons. It was building a classroom where kids felt safe, supported, and capable of more than they thought they were.</p>
-      <p>I was the teacher who volunteered for extra responsibilities, joined committees, and looked for ways to improve things when they weren't working. I cared deeply about my students, but I also cared about the systems around them. I wanted to understand why things worked, why they didn't, and what could be done to make them better. My classroom became known for strong academic outcomes, but more importantly, it was a place where students grew in confidence, independence, and resilience.</p>
-      <p>When I transitioned into operations and public affairs, I was surprised by how much of that same mindset carried over.</p>
-      <p>At <strong>Jefferson &amp; Associates</strong>, I joined a growing consulting firm during a period of significant change. As the company expanded, there was an opportunity to create more structure, build stronger internal systems, and establish processes that would support long-term growth. I've helped develop SOPs, manage executive communications, coordinate projects across multiple stakeholders, and keep complex initiatives moving forward. Much of my work sits at the intersection of operations, communications, and relationship management, whether that's working with clients, attorneys, regulators, trade associations, or internal leadership.</p>
-      <p>Across every role I've held, the common thread has been people. I genuinely enjoy helping others do their best work. Sometimes that means building a process that makes everyone's job easier. Sometimes it means solving a problem that's been sitting on the back burner for too long. Sometimes it simply means being the person who keeps things organized, moving, and connected.</p>
-      <p>As I think about what comes next, I'm especially interested in opportunities where I can bring together my background in education, operations, communications, and public affairs.</p>
-      <p>Educational policy and advocacy is one path that feels particularly meaningful to me. I understand education from the perspective of someone who spent years in the classroom, and I also understand how organizations, policymakers, and stakeholders work together to create change. The idea of helping bridge those worlds is exciting because I know firsthand how much good policy matters, and how different things can look on paper versus in practice.</p>
-      <p>More broadly, I'm drawn to organizations that are growing, evolving, or tackling complicated challenges. I enjoy bringing order to complexity, helping teams communicate more effectively, and creating systems that allow good people to succeed. I don't need to be the loudest person in the room, but I do want to be someone who helps move important work forward.</p>
+  <div class="marquee-wrap">
+    <div class="marquee-inner">
+      <span>Education <span class="dot">&middot;</span></span><span>Operations <span class="dot">&middot;</span></span><span>Public Affairs <span class="dot">&middot;</span></span><span>Austin Born <span class="dot">&middot;</span></span><span>Dallas Based <span class="dot">&middot;</span></span><span>Educator <span class="dot">&middot;</span></span><span>Advocate <span class="dot">&middot;</span></span><span>Communicator <span class="dot">&middot;</span></span><span>Systems Builder <span class="dot">&middot;</span></span><span>Policy <span class="dot">&middot;</span></span><span>Education <span class="dot">&middot;</span></span><span>Operations <span class="dot">&middot;</span></span><span>Public Affairs <span class="dot">&middot;</span></span><span>Austin Born <span class="dot">&middot;</span></span><span>Dallas Based <span class="dot">&middot;</span></span><span>Educator <span class="dot">&middot;</span></span><span>Advocate <span class="dot">&middot;</span></span><span>Communicator <span class="dot">&middot;</span></span><span>Systems Builder <span class="dot">&middot;</span></span><span>Policy <span class="dot">&middot;</span></span>
     </div>
-  </section>
-  <section id="expertise">
-    <p class="section-label">What I do</p>
-    <h2 class="section-title">Areas of expertise</h2>
-    <div class="expertise-grid">
-      <div class="expertise-card"><div class="expertise-icon">&#9881;&#65039;</div><h3>Operations &amp; Systems</h3><p>Designing workflows, SOPs, and organizational infrastructure that scale: from shared drive taxonomy to company-wide process architecture.</p></div>
-      <div class="expertise-card"><div class="expertise-icon">&#9997;&#65039;</div><h3>Executive Communications</h3><p>Drafting high-stakes correspondence for regulators, legislators, boards, and clients. Making complex policy accessible without losing nuance.</p></div>
-      <div class="expertise-card"><div class="expertise-icon">&#128193;</div><h3>Project Management</h3><p>Coordinating multi-stakeholder projects with shifting priorities and regulatory deadlines, keeping timelines, people, and deliverables aligned.</p></div>
-      <div class="expertise-card"><div class="expertise-icon">&#129309;</div><h3>Stakeholder Relations</h3><p>Managing communications across trade associations, membership organizations, government stakeholders, and industry operators.</p></div>
-      <div class="expertise-card"><div class="expertise-icon">&#128226;</div><h3>Public Affairs &amp; Policy</h3><p>Supporting advocacy efforts in cannabis and hemp regulation, from legislative outreach to regulatory implementation education.</p></div>
-      <div class="expertise-card"><div class="expertise-icon">&#128241;</div><h3>Media &amp; Brand Operations</h3><p>Building editorial systems and managing multi-platform content strategies for public affairs and policy education campaigns.</p></div>
-    </div>
-  </section>
-  <section id="skills">
-    <p class="section-label">Toolkit</p>
-    <h2 class="section-title">Skills</h2>
-    <div class="skills-layout">
-      <div class="skill-group"><h4>Operations</h4><div class="skill-tags"><span class="tag">Workflow design</span><span class="tag">SOP development</span><span class="tag">Process documentation</span><span class="tag">Organizational scaling</span><span class="tag">Information architecture</span></div></div>
-      <div class="skill-group"><h4>Communications</h4><div class="skill-tags"><span class="tag">Regulatory correspondence</span><span class="tag">Legislative outreach</span><span class="tag">Board communications</span><span class="tag">Advocacy messaging</span><span class="tag">Newsletters</span></div></div>
-      <div class="skill-group"><h4>Project &amp; Team</h4><div class="skill-tags"><span class="tag">Multi-project coordination</span><span class="tag">Executive support</span><span class="tag">Vendor coordination</span><span class="tag">Meeting facilitation</span><span class="tag">Cross-functional alignment</span></div></div>
-    </div>
-  </section>
-  <section id="looking-ahead">
-    <p class="section-label">Let's work together</p>
-    <h2 class="section-title">Work with me</h2>
-    <div class="aspiration-box">
-      <p>I'm open to conversations about roles, collaborations, and projects where operational clarity and strategic communication actually matter. If you're building something that needs someone who can <strong>hold the big picture and execute on the details,</strong> I'd genuinely love to hear about it.</p>
-      <p>Whether you're a growing organization that needs sharper internal systems, a public affairs or advocacy team navigating complex stakeholder environments, or a leader who needs a trusted operational partner: reach out. Let's figure out if there's something worth exploring together.</p>
-      <div class="cta-row" style="margin-top: 32px;">
-        <a href="mailto:megan@ja.partners" class="btn btn-primary">megan@ja.partners</a>
-        <a href="https://github.com/meganwag23" target="_blank" class="btn btn-secondary"><svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>GitHub</a>
+  </div>
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header fi"><span class="section-label">Background</span><div class="section-rule"></div><span class="section-num">01</span></div>
+      <h2 class="display fi">How I got <em>here</em></h2>
+      <div class="about-grid">
+        <div class="about-body fi">
+          <p>I started my career in education and spent seven years teaching elementary school. Looking back, what I loved most wasn't just teaching the lessons. It was building a classroom where kids felt safe, supported, and capable of more than they thought they were.</p>
+          <p>I was the teacher who volunteered for extra responsibilities, joined committees, and looked for ways to improve things when they weren't working. I cared deeply about my students, but I also cared about the systems around them. I wanted to understand why things worked, why they didn't, and what could be done to make them better. My classroom became known for strong academic outcomes, but more importantly, it was a place where students grew in confidence, independence, and resilience.</p>
+          <p>When I transitioned into operations and public affairs, I was surprised by how much of that same mindset carried over.</p>
+          <p>At <strong>Jefferson &amp; Associates</strong>, I joined a growing consulting firm during a period of significant change. As the company expanded, there was an opportunity to create more structure, build stronger internal systems, and establish processes that would support long-term growth. I've helped develop SOPs, manage executive communications, coordinate projects across multiple stakeholders, and keep complex initiatives moving forward. Much of my work sits at the intersection of operations, communications, and relationship management, whether that's working with clients, attorneys, regulators, trade associations, or internal leadership.</p>
+          <p>Across every role I've held, the common thread has been people. I genuinely enjoy helping others do their best work. Sometimes that means building a process that makes everyone's job easier. Sometimes it means solving a problem that's been sitting on the back burner for too long. Sometimes it simply means being the person who keeps things organized, moving, and connected.</p>
+          <p>As I think about what comes next, I'm especially interested in opportunities where I can bring together my background in education, operations, communications, and public affairs.</p>
+          <p>Educational policy and advocacy is one path that feels particularly meaningful to me. I understand education from the perspective of someone who spent years in the classroom, and I also understand how organizations, policymakers, and stakeholders work together to create change. The idea of helping bridge those worlds is exciting because I know firsthand how much good policy matters, and how different things can look on paper versus in practice.</p>
+          <p>More broadly, I'm drawn to organizations that are growing, evolving, or tackling complicated challenges. I enjoy bringing order to complexity, helping teams communicate more effectively, and creating systems that allow good people to succeed. I don't need to be the loudest person in the room, but I do want to be someone who helps move important work forward.</p>
+        </div>
+        <div class="about-aside fi d2">
+          <div class="pull-quote"><p>"I don't need to be the loudest person in the room, but I do want to be someone who helps move important work forward."</p></div>
+          <div class="stat-row"><div class="stat-num">7</div><div class="stat-label">Years in education</div></div>
+          <div class="stat-row"><div class="stat-num">2</div><div class="stat-label">Career chapters</div></div>
+          <div class="stat-row"><div class="stat-num">TX</div><div class="stat-label">Austin born &middot; Dallas based</div></div>
+        </div>
       </div>
     </div>
   </section>
-  <footer><p>&copy; 2026 Megan Wagner</p></footer>
+  <div class="rule-wrap"><hr /></div>
+  <section class="section" id="expertise">
+    <div class="container">
+      <div class="section-header fi"><span class="section-label">What I do</span><div class="section-rule"></div><span class="section-num">02</span></div>
+      <h2 class="display fi">Areas of <em>expertise</em></h2>
+      <div class="expertise-grid fi">
+        <div class="exp-item"><div class="exp-num">I</div><h3>Operations &amp; Systems</h3><p>Designing workflows, SOPs, and organizational infrastructure that scale: from shared drive taxonomy to company-wide process architecture.</p></div>
+        <div class="exp-item"><div class="exp-num">II</div><h3>Executive Communications</h3><p>Drafting high-stakes correspondence for regulators, legislators, boards, and clients. Making complex policy accessible without losing nuance.</p></div>
+        <div class="exp-item"><div class="exp-num">III</div><h3>Project Management</h3><p>Coordinating multi-stakeholder projects with shifting priorities and regulatory deadlines, keeping timelines, people, and deliverables aligned.</p></div>
+        <div class="exp-item"><div class="exp-num">IV</div><h3>Stakeholder Relations</h3><p>Managing communications across trade associations, membership organizations, government stakeholders, and industry operators.</p></div>
+        <div class="exp-item"><div class="exp-num">V</div><h3>Public Affairs &amp; Policy</h3><p>Supporting advocacy efforts in regulated industries, from legislative outreach to regulatory implementation education.</p></div>
+        <div class="exp-item"><div class="exp-num">VI</div><h3>Media &amp; Brand Operations</h3><p>Building editorial systems and managing multi-platform content strategies for public affairs and policy education campaigns.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="skills-bg" id="skills">
+    <div class="container section" style="padding-top:72px;padding-bottom:72px;">
+      <div class="section-header fi"><span class="section-label">Toolkit</span><div class="section-rule"></div><span class="section-num">03</span></div>
+      <div class="skills-grid fi">
+        <div><p class="skill-cat">Operations</p><div class="tags"><span class="tag">Workflow design</span><span class="tag">SOP development</span><span class="tag">Process documentation</span><span class="tag">Organizational scaling</span><span class="tag">Information architecture</span></div></div>
+        <div><p class="skill-cat">Communications</p><div class="tags"><span class="tag">Regulatory correspondence</span><span class="tag">Legislative outreach</span><span class="tag">Board communications</span><span class="tag">Advocacy messaging</span><span class="tag">Newsletters</span></div></div>
+        <div><p class="skill-cat">Project &amp; Team</p><div class="tags"><span class="tag">Multi-project coordination</span><span class="tag">Executive support</span><span class="tag">Vendor coordination</span><span class="tag">Meeting facilitation</span><span class="tag">Cross-functional alignment</span></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="connect-bg" id="connect">
+    <span class="connect-label">Let's work together</span>
+    <h2>Work<br><em>with me</em></h2>
+    <p>I'm open to conversations about roles, collaborations, and projects where operational clarity and strategic communication actually matter. Reach out and let's explore what's possible.</p>
+    <div class="connect-btns">
+      <a href="mailto:megan@ja.partners" class="btn-pale">megan@ja.partners</a>
+      <a href="https://github.com/meganwag23" target="_blank" class="btn-ghost"><svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>GitHub</a>
+    </div>
+  </section>
+  <footer><p>&copy; 2026 Megan Wagner</p><p>Austin born &nbsp;&middot;&nbsp; Dallas based</p></footer>
+  <script>
+    window.addEventListener('scroll', () => { const h = document.documentElement; document.getElementById('progress').style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + '%'; });
+    const obs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('on'); }); }, { threshold: 0.08 });
+    document.querySelectorAll('.fi').forEach(el => obs.observe(el));
+  </script>
 </body>
-</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       </html>
